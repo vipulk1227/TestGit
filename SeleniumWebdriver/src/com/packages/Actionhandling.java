@@ -15,11 +15,13 @@ public class Actionhandling {
 		driver.manage().window().maximize();
 		driver.get("https://msrtc.maharashtra.gov.in/");
 
+
+		//Mouse hover
 		WebElement eng=driver.findElement(By.linkText("English"));
-		      eng.click();
+		eng.click();
 
 		WebElement service=driver.findElement(By.linkText("Services"));
-		   //service.click();
+		//service.click();
 
 		Actions act=new Actions(driver);
 
