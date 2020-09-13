@@ -15,6 +15,7 @@ public class DragDrop {
 		driver.manage().window().maximize();
 		driver.get("https://jqueryui.com/droppable/");
 		
+		// Switch top window to frame
 		driver.switchTo().frame(0);
 		
 		WebElement drag=driver.findElement(By.id("draggable"));
@@ -27,6 +28,7 @@ public class DragDrop {
 		
 		act.dragAndDrop(drag, drop).build().perform();
 		
+		driver.switchTo().defaultContent();
 		
 	}
 
