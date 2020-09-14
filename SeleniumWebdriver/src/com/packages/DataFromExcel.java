@@ -44,7 +44,7 @@ public class DataFromExcel {
 		 {
 			for(int j=0;j<col;j++)
 			{
-				data[i][j]=sh.getCell(1, 2).getContents();
+				data[i][j]=sh.getCell(j, i).getContents();
 				System.out.println(data[i][j]);
 			}
 			
